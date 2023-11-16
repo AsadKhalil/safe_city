@@ -1,0 +1,380 @@
+
+body{
+  margin: 10px;
+  padding: 4px;
+  letter-spacing: .02rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: rgb(3, 3, 3); /* Black background for the website */
+}
+.bx-promo-header__inner {
+  margin-left: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  max-width: var(--container-width);
+  font-family: 'Guardian Sans', sans-serif;
+}
+.bx-promo-header__title{
+  font-size: 54px;
+  color:#fcb900 ;
+  margin-left: 70px;
+}
+.bx-promo-header__description{
+  font-size: 20px;
+  margin-top: 73px;
+  color:#fcb900 ;
+  
+}
+.city-container {
+  text-align: left;
+  font-family: 'Guardian Sans', sans-serif;
+  font-size: 20px;
+  margin-top: 2px;
+  margin-left: 290px;
+  color: #fcb900;
+}
+
+.city {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.8); /* Transparent black background */
+ 
+}
+
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+  margin-left: 70px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fcb900; /* Adjusted golden color */
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-list a:hover {
+  color: #4b320b; /* A bit more beautiful shade of golden on hover */
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid #80663c; /* Darker underline on hover */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: calc(100% - 40px); /* Adjusted to be wider with 20px margin on each side */
+  top: 100%; /* Adjusted to display below the navbar */
+  margin: 10px; /* Added margin from the navbar */
+  border-top: 2px solid #d4a150; /* Line on top of the container */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.nav-list a .dropdown-icon {
+  font-size: 8px; /* Adjusted size of the dropdown icon */
+}
+.dropdown-line {
+  height: 2px;
+  width: 100%;
+  background-color: #d4a150; /* A bit more beautiful shade of golden for the line */
+}
+
+.dropdown-items {
+  padding: 10px;
+}
+
+.dropdown-items a {
+  color:  #fcb900; /* Adjusted golden color */
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.search-icon {
+  font-size: 20px; /* Adjusted size of the search icon */
+  color: #fcb900; /* Adjusted color to match the listed items */
+}
+.nav-list a:hover .search-icon {
+  transform: scale(1.2); /* Example: Increase icon size on hover */
+  transition: transform 0.3s;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  
+  color: #fcb900; /* Text color updated to match the header text color */
+  padding: 20px;
+}
+
+.footer-col {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-col.logo {
+  flex: 2;
+}
+
+.footer-col img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-col h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: #fcb900; /* Updated to match the header text color */
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+  color: #d4a150;
+}
+.footer-line {
+  width: 100%;
+  height: 2px;
+  background-color: #fcb900; /* Theme color for the line */
+  margin-top: 15px;
+}
+.banner-container {
+  position: relative;
+  text-align: center;
+}
+
+.banner-image {
+  width: 1440px;
+  height: 600px;
+}
+.slider-container {
+  overflow: hidden;
+  width: 100%; /* Adjust the width as needed */
+  position: relative;
+  margin-top: 1px;
+}
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (change this value based on your video's aspect ratio) */
+  border: 2px solid #030303; /* Set border color according to your website theme */
+  margin: 20px 0; /* Adjust margin as needed */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  flex: 0 0 50%; /* Display two items at a time */
+  max-width: 50%; /* Ensure two items fit in the container */
+  box-sizing: border-box;
+  padding: 0 10px; /* Add padding for spacing between images */
+}
+
+.slider-item img {
+  width: 100%; /* Make images fill the entire width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 980px; /* Set max-width to limit image size */
+  max-height: 980px; /* Set max-height to limit image size */
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: #b4b423; /* Arrow color */
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fcb900;
+  font-size: 24px;
+  font-weight: bold;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fcb900; /* Matched to the footer text color */
+  padding: 10px;
+}
+
+.footer-text-left {
+  flex: 1;
+}
+
+.footer-text-right {
+  flex: 1;
+  text-align: right;
+}
+.slider-container1 {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider1 {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides1 {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #fcb900;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.arrows {
+  cursor: pointer;
+  font-size: 20px;
+  color: #fcb900;
+  margin-right: 5px;
+
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #fcb900;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.slider-container-3 {
+  overflow: hidden;
+  width: 100%; /* Adjust the width as needed */
+  position: relative;
+}
+
+.slider-wrapper-3 {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item-3 {
+  flex: 0 0 50%; /* Display two items at a time */
+  max-width: 50%; /* Ensure two items fit in the container */
+  box-sizing: border-box;
+  padding: 0 10px; /* Add padding for spacing between images */
+}
+
+.slider-item-3 img {
+  width: 100%; /* Make images fill the entire width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 980px; /* Set max-width to limit image size */
+  max-height: 980px; /* Set max-height to limit image size */
+}
+
+.slider-arrow-3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 34px;
+  cursor: pointer;
+  color: #fcb900; /* Arrow color */
+}
+
+.arrow-left-3 {
+  left: 0;
+}
+
+.arrow-right-3 {
+  right: 0;
+}
